@@ -1,4 +1,4 @@
-package itProger.OOP.Полиморфизм;
+package itProger.OOP.Абстрактные_классы_и_методы;
 
 public class Transport {
 
