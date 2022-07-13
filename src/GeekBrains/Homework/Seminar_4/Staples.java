@@ -15,51 +15,51 @@ public class Staples {
         boolean status;
         status = true;
 
-            for (int i = 0; i < s.length(); i++) {
-                switch (s.charAt(i)) {
-                    case '(':
-                    case '<':
-                    case '[':
-                    case '{':
-                        deque.addFirst(s.charAt(i));
-                        break;
-
-                    case ')':
-                        if ((deque.peekFirst() != '(') || deque.peekFirst() == null) {
-                            status = false;
-                            break;
-                        } else deque.pop();
-                        break;
-
-                    case ']':
-                        if ((deque.peekFirst() != '[') || deque.peekFirst() == null) {
-                            status = false;
-                            break;
-                        } else deque.pop();
-                        break;
-
-                    case '}':
-                        if ((deque.peekFirst() != '{') || deque.peekFirst() == null) {
-                            status = false;
-                            break;
-                        } else deque.pop();
-                        break;
-
-                    case '>':
-                        if ((deque.peekFirst() != '<') || deque.peekFirst() == null) {
-                            status = false;
-                            break;
-                        } else deque.pop();
-                        break;
-                }
-                if (!status) {
+        for (int i = 0; i < s.length(); i++) {
+            switch (s.charAt(i)) {
+                case '(':
+                case '<':
+                case '[':
+                case '{':
+                    deque.addFirst(s.charAt(i));
                     break;
-                }
-            }
 
-            if (deque.peekFirst() == null)
-                System.out.print(true);
-            else
-                System.out.print(false);
+                case ')':
+                    if ((deque.peekFirst() != '(') || deque.peekFirst() == null) {
+                        status = false;
+                        break;
+                    } else deque.pop();
+                    break;
+
+                case ']':
+                    if ((deque.peekFirst() != '[') || deque.peekFirst() == null) {
+                        status = false;
+                        break;
+                    } else deque.pop();
+                    break;
+
+                case '}':
+                    if ((deque.peekFirst() != '{') || deque.peekFirst() == null) {
+                        status = false;
+                        break;
+                    } else deque.pop();
+                    break;
+
+                case '>':
+                    if ((deque.peekFirst() != '<') || deque.peekFirst() == null) {
+                        status = false;
+                        break;
+                    } else deque.pop();
+                    break;
+            }
+            if (!status) {
+                break;
+            }
         }
+
+        if (deque.peekFirst() == null)
+            System.out.print(true);
+        else
+            System.out.print(false);
     }
+}
