@@ -31,7 +31,6 @@ public class Nums {
     }
 
     public static String getRoman(int initNum){
-        int size = Integer.toString(initNum).length();
         StringBuilder sb = new StringBuilder();
         for(int i : numberMap.keySet()) {
             if (initNum / i > 0) {
