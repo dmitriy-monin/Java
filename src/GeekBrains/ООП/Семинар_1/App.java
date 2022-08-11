@@ -29,6 +29,7 @@ public class App {
         Research.infoAboutPerson("Alena", tree);     // Вся информация о конкретном человеке
 //        Research.printAllChildren("Oleg", tree);     // Дети
 //        Research.printParent("Sasha", tree);          // Родители
+        Output.output_data(tree, Aim.FILE);
     }
 
 }
