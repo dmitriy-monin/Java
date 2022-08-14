@@ -12,7 +12,7 @@ public class App {
         Person Oleg = new Grandadults("Oleg", "M");
         Person Alla = new Grandadults("Alla", "M");
         Person Alena = new Adults("Alena", "M");
-        Person Sasha = new Childs("Sasha", "M");
+        Person Sasha = new Childs("Sasha", "M",7);
 
         Tree tree = new Tree();
 

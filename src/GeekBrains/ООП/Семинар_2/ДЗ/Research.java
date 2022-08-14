@@ -32,7 +32,7 @@ public class Research {
     public static void infoAboutPerson(String name, Tree tree) {
         List<Link> links = tree.getLinks();
 
-        /**
+        /*
          * *Метод infoAboutPerson получился очень большим. Советую разбить на более мелкие private методы.
          *
          * Не очень понимаю как это сделать. Так как сделал в первом if правильно или надо как то по-другому?
