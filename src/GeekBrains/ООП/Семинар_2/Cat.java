@@ -2,19 +2,13 @@ package GeekBrains.ООП.Семинар_2;
 
 public class Cat extends Animal {
 
-
-    public Cat(String name) {
-        super(name);
-    }
-
     @Override
-    public void come() {
-        super.come();
-    }
-
-    @Override
-    public void answer() {
-        super.answer();
+    protected void goodAnswer() {
         System.out.println("Myau");
+    }
+
+    @Override
+    void badAnswer() {
+        System.out.println("FFFFF");
     }
 }

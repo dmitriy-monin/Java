@@ -1,20 +1,20 @@
-Link{personFirst=Person{name='Oleg', surname='M'}, personSecond=Person{name='Dima', surname='M'}, link=PARENT}
-Link{personFirst=Person{name='Dima', surname='M'}, personSecond=Person{name='Oleg', surname='M'}, link=CHILD}
-Link{personFirst=Person{name='Alla', surname='M'}, personSecond=Person{name='Dima', surname='M'}, link=PARENT}
-Link{personFirst=Person{name='Dima', surname='M'}, personSecond=Person{name='Alla', surname='M'}, link=CHILD}
-Link{personFirst=Person{name='Alena', surname='M'}, personSecond=Person{name='Dima', surname='M'}, link=WIFE}
-Link{personFirst=Person{name='Dima', surname='M'}, personSecond=Person{name='Alena', surname='M'}, link=HUSBAND}
-Link{personFirst=Person{name='Sasha', surname='M'}, personSecond=Person{name='Dima', surname='M'}, link=CHILD}
-Link{personFirst=Person{name='Dima', surname='M'}, personSecond=Person{name='Sasha', surname='M'}, link=PARENT}
-Link{personFirst=Person{name='Oleg', surname='M'}, personSecond=Person{name='Alla', surname='M'}, link=HUSBAND}
-Link{personFirst=Person{name='Alla', surname='M'}, personSecond=Person{name='Oleg', surname='M'}, link=WIFE}
-Link{personFirst=Person{name='Oleg', surname='M'}, personSecond=Person{name='Alena', surname='M'}, link=FATHER_IN_LAW}
-Link{personFirst=Person{name='Alena', surname='M'}, personSecond=Person{name='Oleg', surname='M'}, link=DAUGHTER_IN_LAW}
-Link{personFirst=Person{name='Oleg', surname='M'}, personSecond=Person{name='Sasha', surname='M'}, link=GRANDFATHER}
-Link{personFirst=Person{name='Sasha', surname='M'}, personSecond=Person{name='Oleg', surname='M'}, link=GRANDSONS}
-Link{personFirst=Person{name='Alla', surname='M'}, personSecond=Person{name='Alena', surname='M'}, link=MOTHER_IN_LAW}
-Link{personFirst=Person{name='Alena', surname='M'}, personSecond=Person{name='Alla', surname='M'}, link=DAUGHTER_IN_LAW}
-Link{personFirst=Person{name='Alla', surname='M'}, personSecond=Person{name='Sasha', surname='M'}, link=GRANDMOTHER}
-Link{personFirst=Person{name='Sasha', surname='M'}, personSecond=Person{name='Alla', surname='M'}, link=GRANDSONS}
-Link{personFirst=Person{name='Alena', surname='M'}, personSecond=Person{name='Sasha', surname='M'}, link=PARENT}
-Link{personFirst=Person{name='Sasha', surname='M'}, personSecond=Person{name='Alena', surname='M'}, link=CHILD}
+GeekBrains.ООП.Семинар_2.ДЗ.Link@31befd9f
+GeekBrains.ООП.Семинар_2.ДЗ.Link@1c20c684
+GeekBrains.ООП.Семинар_2.ДЗ.Link@1fb3ebeb
+GeekBrains.ООП.Семинар_2.ДЗ.Link@548c4f57
+GeekBrains.ООП.Семинар_2.ДЗ.Link@1218025c
+GeekBrains.ООП.Семинар_2.ДЗ.Link@816f27d
+GeekBrains.ООП.Семинар_2.ДЗ.Link@87aac27
+GeekBrains.ООП.Семинар_2.ДЗ.Link@3e3abc88
+GeekBrains.ООП.Семинар_2.ДЗ.Link@6ce253f1
+GeekBrains.ООП.Семинар_2.ДЗ.Link@53d8d10a
+GeekBrains.ООП.Семинар_2.ДЗ.Link@e9e54c2
+GeekBrains.ООП.Семинар_2.ДЗ.Link@65ab7765
+GeekBrains.ООП.Семинар_2.ДЗ.Link@1b28cdfa
+GeekBrains.ООП.Семинар_2.ДЗ.Link@eed1f14
+GeekBrains.ООП.Семинар_2.ДЗ.Link@7229724f
+GeekBrains.ООП.Семинар_2.ДЗ.Link@4c873330
+GeekBrains.ООП.Семинар_2.ДЗ.Link@119d7047
+GeekBrains.ООП.Семинар_2.ДЗ.Link@776ec8df
+GeekBrains.ООП.Семинар_2.ДЗ.Link@4eec7777
+GeekBrains.ООП.Семинар_2.ДЗ.Link@3b07d329

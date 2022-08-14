@@ -1,14 +1,18 @@
-package GeekBrains.ООП.Семинар_1;
+package GeekBrains.ООП.Семинар_2.ДЗ;
 
+
+import GeekBrains.ООП.Семинар_2.ДЗ.Generation.Adults;
+import GeekBrains.ООП.Семинар_2.ДЗ.Generation.Childs;
+import GeekBrains.ООП.Семинар_2.ДЗ.Generation.Grandadults;
 
 public class App {
 
     public static void main(String[] args) {
-        Person Dima = new Person("Dima", "M");
-        Person Oleg = new Person("Oleg", "M");
-        Person Alla = new Person("Alla", "M");
-        Person Alena = new Person("Alena", "M");
-        Person Sasha = new Person("Sasha", "M");
+        Person Dima = new Adults("Dima", "M");
+        Person Oleg = new Grandadults("Oleg", "M");
+        Person Alla = new Grandadults("Alla", "M");
+        Person Alena = new Adults("Alena", "M");
+        Person Sasha = new Childs("Sasha", "M");
 
         Tree tree = new Tree();
 
@@ -26,10 +30,10 @@ public class App {
 
         tree.addLink(Alena, Sasha, Relation.PARENT, Relation.CHILD);
 
-        Research.infoAboutPerson("Alena", tree);     // Вся информация о конкретном человеке
+        Research.infoAboutPerson("Dima", tree);     // Вся информация о конкретном человеке
 //        Research.printAllChildren("Oleg", tree);     // Дети
 //        Research.printParent("Sasha", tree);          // Родители
-        Output.outputData(tree, Aim.FILE);
+//        Output.outputData(tree, Aim.FILE);
     }
 
 }

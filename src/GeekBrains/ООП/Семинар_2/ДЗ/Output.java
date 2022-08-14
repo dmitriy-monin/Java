@@ -1,5 +1,7 @@
-package GeekBrains.ООП.Семинар_1;
+package GeekBrains.ООП.Семинар_2.ДЗ;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 public class Output {
@@ -18,15 +20,15 @@ public class Output {
          * Вывод в файл
          */
         if (aim == Aim.FILE) {
-            try(java.io.FileWriter writer = new java.io.FileWriter("output.txt", false)) {
+            try(FileWriter writer = new FileWriter("output.txt", false)) {
                 for (Link el : links) {
                     writer.write(el.toString());
                     writer.write("\n");
                     writer.flush();
                 }
             }
-            catch(java.io.IOException ex) {
-                System.out.println(ex.getMessage());
+            catch(IOException ex) {
+                System.err.println();
             }
         }
     }
