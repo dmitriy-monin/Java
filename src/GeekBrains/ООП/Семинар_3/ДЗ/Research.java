@@ -1,13 +1,13 @@
-package GeekBrains.ООП.Семинар_2.ДЗ;
+package GeekBrains.ООП.Семинар_3.ДЗ;
 
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
-import java.io.FileWriter;
 
-public class Research {
-
-    public static void printAllChildren(String name, Tree tree) {
+public class Research implements Searchable {
+    @Override
+    public void printAllChildren(String name, Tree tree) {
         List<Link> links = tree.getLinks();
         System.out.println("Дети " + name + ":");
         for (Link el : links) {
@@ -18,7 +18,8 @@ public class Research {
         }
     }
 
-    public static void printParent(String name, Tree tree) {
+    @Override
+    public void printParent(String name, Tree tree) {
         List<Link> links = tree.getLinks();
         System.out.println("Родители " + name + ":");
         for (Link el : links) {
@@ -29,7 +30,8 @@ public class Research {
         }
     }
 
-    public static void infoAboutPerson(String name, Tree tree) {
+    @Override
+    public void infoAboutPerson(String name, Tree tree) {
         List<Link> links = tree.getLinks();
 
         if (name == "Dima" || name == "Sasha") {

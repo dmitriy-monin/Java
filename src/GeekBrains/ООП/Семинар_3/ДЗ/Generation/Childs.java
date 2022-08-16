@@ -1,15 +1,16 @@
-package GeekBrains.ООП.Семинар_2.ДЗ.Generation;
+package GeekBrains.ООП.Семинар_3.ДЗ.Generation;
 
-import GeekBrains.ООП.Семинар_2.ДЗ.Person;
+import GeekBrains.ООП.Семинар_3.ДЗ.Person;
+import GeekBrains.ООП.Семинар_3.ДЗ.Searchable;
 
 public class Childs extends Person {
 
-    public Childs(String name, String surname, int age) {
-        super(name, surname, age);
+    public Childs(String name, String surname, int age, Searchable searchable) {
+        super(name, surname, age, searchable);
     }
 
-    public Childs(String name, String surname) {
-        super(name, surname);
+    public Childs(String name, String surname, Searchable searchable) {
+        super(name, surname, searchable);
     }
 
     @Override

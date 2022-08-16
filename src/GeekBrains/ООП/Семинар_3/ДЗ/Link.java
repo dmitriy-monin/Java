@@ -1,4 +1,4 @@
-package GeekBrains.ООП.Семинар_2.ДЗ;
+package GeekBrains.ООП.Семинар_3.ДЗ;
 
 public class Link {
     private Person personFirst;
