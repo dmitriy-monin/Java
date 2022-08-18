@@ -21,7 +21,7 @@ public class Childs extends Person {
                     "name='" + name + '\'' +
                     ", surname='" + surname + '\'' +
                     ", age='" + age + '\'' +
-                    '}';
+                    '}'+'\n';
         } else {
             a = "Childs{" +
                     "name='" + name + '\'' +

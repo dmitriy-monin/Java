@@ -1,6 +1,6 @@
 package GeekBrains.ООП.Семинар_3.ДЗ;
 
-public abstract class Person {
+public abstract class Person implements Comparable <Person>{
     protected String name;
     protected String surname;
     protected int age;
@@ -50,5 +50,10 @@ public abstract class Person {
 
     public void searchInfoAboutPerson(Tree tree){
         searchable.infoAboutPerson(name, tree);
+    }
+
+    @Override
+    public int compareTo(Person o){
+        return o.age - this.age;
     }
 }

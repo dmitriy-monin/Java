@@ -1,20 +1,60 @@
-Link{personFirst=Grandadults{name='Oleg', surname='M'}, personSecond=Adults{name='Dima', surname='M'}, link=PARENT}
-Link{personFirst=Adults{name='Dima', surname='M'}, personSecond=Grandadults{name='Oleg', surname='M'}, link=CHILD}
-Link{personFirst=Grandadults{name='Alla', surname='M'}, personSecond=Adults{name='Dima', surname='M'}, link=PARENT}
-Link{personFirst=Adults{name='Dima', surname='M'}, personSecond=Grandadults{name='Alla', surname='M'}, link=CHILD}
-Link{personFirst=Adults{name='Alena', surname='M'}, personSecond=Adults{name='Dima', surname='M'}, link=WIFE}
-Link{personFirst=Adults{name='Dima', surname='M'}, personSecond=Adults{name='Alena', surname='M'}, link=HUSBAND}
-Link{personFirst=Childs{name='Sasha', surname='M', age='7'}, personSecond=Adults{name='Dima', surname='M'}, link=CHILD}
-Link{personFirst=Adults{name='Dima', surname='M'}, personSecond=Childs{name='Sasha', surname='M', age='7'}, link=PARENT}
-Link{personFirst=Grandadults{name='Oleg', surname='M'}, personSecond=Grandadults{name='Alla', surname='M'}, link=HUSBAND}
-Link{personFirst=Grandadults{name='Alla', surname='M'}, personSecond=Grandadults{name='Oleg', surname='M'}, link=WIFE}
-Link{personFirst=Grandadults{name='Oleg', surname='M'}, personSecond=Adults{name='Alena', surname='M'}, link=FATHER_IN_LAW}
-Link{personFirst=Adults{name='Alena', surname='M'}, personSecond=Grandadults{name='Oleg', surname='M'}, link=DAUGHTER_IN_LAW}
-Link{personFirst=Grandadults{name='Oleg', surname='M'}, personSecond=Childs{name='Sasha', surname='M', age='7'}, link=GRANDFATHER}
-Link{personFirst=Childs{name='Sasha', surname='M', age='7'}, personSecond=Grandadults{name='Oleg', surname='M'}, link=GRANDSONS}
-Link{personFirst=Grandadults{name='Alla', surname='M'}, personSecond=Adults{name='Alena', surname='M'}, link=MOTHER_IN_LAW}
-Link{personFirst=Adults{name='Alena', surname='M'}, personSecond=Grandadults{name='Alla', surname='M'}, link=DAUGHTER_IN_LAW}
-Link{personFirst=Grandadults{name='Alla', surname='M'}, personSecond=Childs{name='Sasha', surname='M', age='7'}, link=GRANDMOTHER}
-Link{personFirst=Childs{name='Sasha', surname='M', age='7'}, personSecond=Grandadults{name='Alla', surname='M'}, link=GRANDSONS}
-Link{personFirst=Adults{name='Alena', surname='M'}, personSecond=Childs{name='Sasha', surname='M', age='7'}, link=PARENT}
-Link{personFirst=Childs{name='Sasha', surname='M', age='7'}, personSecond=Adults{name='Alena', surname='M'}, link=CHILD}
+Link{personFirst=Grandadults{name='Oleg', surname='M', age='56'}
+, personSecond=Adults{name='Dima', surname='M', age='32'}
+, link=PARENT}
+Link{personFirst=Adults{name='Dima', surname='M', age='32'}
+, personSecond=Grandadults{name='Oleg', surname='M', age='56'}
+, link=CHILD}
+Link{personFirst=Grandadults{name='Alla', surname='M', age='55'}
+, personSecond=Adults{name='Dima', surname='M', age='32'}
+, link=PARENT}
+Link{personFirst=Adults{name='Dima', surname='M', age='32'}
+, personSecond=Grandadults{name='Alla', surname='M', age='55'}
+, link=CHILD}
+Link{personFirst=Adults{name='Alena', surname='M', age='31'}
+, personSecond=Adults{name='Dima', surname='M', age='32'}
+, link=WIFE}
+Link{personFirst=Adults{name='Dima', surname='M', age='32'}
+, personSecond=Adults{name='Alena', surname='M', age='31'}
+, link=HUSBAND}
+Link{personFirst=Childs{name='Sasha', surname='M', age='7'}
+, personSecond=Adults{name='Dima', surname='M', age='32'}
+, link=CHILD}
+Link{personFirst=Adults{name='Dima', surname='M', age='32'}
+, personSecond=Childs{name='Sasha', surname='M', age='7'}
+, link=PARENT}
+Link{personFirst=Grandadults{name='Oleg', surname='M', age='56'}
+, personSecond=Grandadults{name='Alla', surname='M', age='55'}
+, link=HUSBAND}
+Link{personFirst=Grandadults{name='Alla', surname='M', age='55'}
+, personSecond=Grandadults{name='Oleg', surname='M', age='56'}
+, link=WIFE}
+Link{personFirst=Grandadults{name='Oleg', surname='M', age='56'}
+, personSecond=Adults{name='Alena', surname='M', age='31'}
+, link=FATHER_IN_LAW}
+Link{personFirst=Adults{name='Alena', surname='M', age='31'}
+, personSecond=Grandadults{name='Oleg', surname='M', age='56'}
+, link=DAUGHTER_IN_LAW}
+Link{personFirst=Grandadults{name='Oleg', surname='M', age='56'}
+, personSecond=Childs{name='Sasha', surname='M', age='7'}
+, link=GRANDFATHER}
+Link{personFirst=Childs{name='Sasha', surname='M', age='7'}
+, personSecond=Grandadults{name='Oleg', surname='M', age='56'}
+, link=GRANDSONS}
+Link{personFirst=Grandadults{name='Alla', surname='M', age='55'}
+, personSecond=Adults{name='Alena', surname='M', age='31'}
+, link=MOTHER_IN_LAW}
+Link{personFirst=Adults{name='Alena', surname='M', age='31'}
+, personSecond=Grandadults{name='Alla', surname='M', age='55'}
+, link=DAUGHTER_IN_LAW}
+Link{personFirst=Grandadults{name='Alla', surname='M', age='55'}
+, personSecond=Childs{name='Sasha', surname='M', age='7'}
+, link=GRANDMOTHER}
+Link{personFirst=Childs{name='Sasha', surname='M', age='7'}
+, personSecond=Grandadults{name='Alla', surname='M', age='55'}
+, link=GRANDSONS}
+Link{personFirst=Adults{name='Alena', surname='M', age='31'}
+, personSecond=Childs{name='Sasha', surname='M', age='7'}
+, link=PARENT}
+Link{personFirst=Childs{name='Sasha', surname='M', age='7'}
+, personSecond=Adults{name='Alena', surname='M', age='31'}
+, link=CHILD}

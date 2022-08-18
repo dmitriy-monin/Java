@@ -5,15 +5,29 @@ import GeekBrains.ООП.Семинар_3.ДЗ.Searchable;
 
 public class Adults extends Person {
 
+    public Adults(String name, String surname, int age, Searchable searchable) {
+        super(name, surname, age, searchable);
+    }
+
     public Adults(String name, String surname, Searchable searchable) {
         super(name, surname, searchable);
     }
 
     @Override
     public String toString() {
-        return "Adults{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                '}';
+        String a = "";
+        if (age != 0) {
+            a = "Adults{" +
+                    "name='" + name + '\'' +
+                    ", surname='" + surname + '\'' +
+                    ", age='" + age + '\'' +
+                    '}'+'\n';
+        } else {
+            a = "Adults{" +
+                    "name='" + name + '\'' +
+                    ", surname='" + surname + '\'' +
+                    '}';
+        }
+        return a;
     }
 }
