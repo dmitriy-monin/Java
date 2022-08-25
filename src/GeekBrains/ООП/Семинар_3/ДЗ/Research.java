@@ -34,7 +34,7 @@ public class Research implements Searchable {
     public void infoAboutPerson(String name, Tree tree) {
         List<Link> links = tree.getLinks();
 
-        if (name == "Dima" || name == "Sasha") {
+        if (name.equals("Dima") || name == "Sasha") {
             System.out.println("Родители " + name + ":");
             Relation relation = Relation.CHILD;
             infoPerson(name, links, relation);

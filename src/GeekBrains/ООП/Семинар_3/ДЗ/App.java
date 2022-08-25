@@ -43,6 +43,7 @@ public class App {
 //        Alena.searchAllChildren(tree);
 //        Sasha.searchParent(tree);
 //        Alla.searchInfoAboutPerson(tree);
+//        Dima.searchInfoAboutPerson(tree);
 
         List<Person> sortAge = new ArrayList<>();
         sortAge.add(Dima);
