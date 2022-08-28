@@ -1,9 +1,7 @@
 package GeekBrains.ООП.Семинар_5.Homework;
 
 import GeekBrains.ООП.Семинар_5.Homework.Rights.RightAdmin;
-import GeekBrains.ООП.Семинар_5.ДЗ.Message;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Messanger implements RightAdmin {
@@ -11,7 +9,6 @@ public class Messanger implements RightAdmin {
     private Person person1;
     private Person person2;
     private Main scanner;
-    private List<Message> messageList;
 
     public Messanger() {
         this.person1 = person1;
