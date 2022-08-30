@@ -1,7 +1,9 @@
 package GeekBrains.ООП.Семинар_5.Homework;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class MessageBase {
@@ -51,9 +53,12 @@ public class MessageBase {
         messageBase.add(message);
         getMess = messageBase.get(id-1);
 
-        Date date = new Date();
+        LocalDate date = LocalDate.now();
+        LocalTime time = LocalTime.now();
+        LocalDateTime current = LocalDateTime.of(date, time);
+
         System.out.println("Добавлено новое сообщение! \n" +
-                "Дата и время отправки: " + date + "\n" +
+                "Дата и время отправки: " + current + "\n" +
                 "Отправитель: " + person1.getName() + " " + person1.getSurname() + " (" + person1.getPhoneNumber() + ")\n" +
                 "Получатель: " + person2.getName() + " " + person2.getSurname() + " (" + person2.getPhoneNumber() + ")\n" +
                 "Сообщение: " + messageBase.get(id - 1));

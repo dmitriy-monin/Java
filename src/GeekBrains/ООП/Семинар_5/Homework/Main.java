@@ -20,7 +20,7 @@ public class Main {
         User user = new User("Alex", "Sam", 89991234567L, Role.USER);
         addBase.UsersBase(user);
         User user1 = new User("Max", "Iva", 89931244469L, Role.USER);
-        addBase.UsersBase(user);
+        addBase.UsersBase(user1);
         Moderator moderator = new Moderator("Sam", "Van", 89110989009L, Role.MODERATOR);
         addBase.UsersBase(moderator);
         Admin admin = new Admin("David", "Hanov", 89221212211L, Role.ADMIN);
@@ -28,13 +28,24 @@ public class Main {
 
         System.out.println();
 
+        for (Person counter : addBase.getUserBase())
+            System.out.print(counter + "\n");
+
+
         Messanger messanger = new Messanger();
-        messanger.sendMessage(user, user1);
+//        messanger.sendMessage(user, user1);
+//        System.out.println();
+//        messanger.getMessage(user, user1, MessageBase.getGetMess());
+//        System.out.println();
+//        messanger.deleteMessage(moderator, MessageBase.getGetMess());
+//        System.out.println();
+//        messanger.editMessage(moderator, MessageBase.getGetMess(), "Сообщение изменено!");
         System.out.println();
-        messanger.getMessage(user, user1, MessageBase.getGetMess());
-        System.out.println();
-        messanger.deleteMessage(moderator,MessageBase.getGetMess());
-        System.out.println();
-        messanger.editMessage(moderator,MessageBase.getGetMess(), "Сообщение изменено!");
+
+        messanger.deleteUser(addBase, admin, 2);
+        messanger.blockUser(addBase, admin, 2);
+
+        for (Person counter : addBase.getUserBase())
+            System.out.print(counter + "\n");
     }
 }

@@ -4,19 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UsersBase {
-    private static int id=1;
-    private static List<Person> userBase;
+    private int id=1;
+    private List<Person> userBase;
+    private int index;
 
     public UsersBase() {
         this.id = id;
         this.userBase = new ArrayList<>();
+        this.index = index;
     }
 
-    public static int getId() {
+    public int getId() {
         return id;
     }
 
-    public static List<Person> getUserBase() {
+    public List<Person> getUserBase() {
         return userBase;
     }
 
@@ -25,5 +27,14 @@ public class UsersBase {
         System.out.println("ADD "+ userBase.get(id-1));
         id++;
     }
+
+    public void DeleteUser(int index) {
+        userBase.remove(index);
+    }
+
+    public void BlockUser(int index, Person block){
+        userBase.add(index, block);
+    }
+
 
 }

@@ -9,11 +9,13 @@ public class Messanger implements RightAdmin {
     private Person person1;
     private Person person2;
     private Main scanner;
+    private int indexUser;
 
     public Messanger() {
         this.person1 = person1;
         this.person2 = person2;
         this.scanner = scanner;
+        this.indexUser = indexUser;
     }
 
     public Person getPerson1() {
@@ -36,7 +38,6 @@ public class Messanger implements RightAdmin {
                 "Введите сообщение: ");
         Scanner scanner = new Scanner(System.in);
         String message = scanner.nextLine();
-        scanner.close();
         System.out.println("Сообщение отправлено!");
         System.out.println();
         MessageBase addMessage = new MessageBase();
@@ -52,7 +53,7 @@ public class Messanger implements RightAdmin {
 
     @Override
     public void editMessage(Person person, String getMess, String getMess1) {
-        if (person.getRole() == Role.MODERATOR || person.getRole() == Role.ADMIN){
+        if (person.getRole() == Role.MODERATOR || person.getRole() == Role.ADMIN) {
             getMess = getMess1;
             System.out.println(getMess);
         }
@@ -61,20 +62,28 @@ public class Messanger implements RightAdmin {
 
     @Override
     public void deleteMessage(Person person, String getMess) {
-        if (person.getRole() == Role.MODERATOR || person.getRole() == Role.ADMIN){
+        if (person.getRole() == Role.MODERATOR || person.getRole() == Role.ADMIN) {
             getMess = "Сообщение удалено!";
             System.out.println(getMess);
         }
     }
 
     @Override
-    public void blockUser() {
-
+    public void blockUser(UsersBase usersBase, Person person1, int indexUser) {
+        UsersBase block;
+        block = usersBase;
+        if (person1.getRole() == Role.ADMIN) {
+            // пока что не доходит как реализовать
+        }
     }
 
     @Override
-    public void deleteUser() {
-
+    public void deleteUser(UsersBase usersBase, Person person1, int indexUser) {
+        UsersBase delete;
+        delete = usersBase;
+        if (person1.getRole() == Role.ADMIN) {
+            delete.DeleteUser(indexUser);
+        }
     }
 
 }
