@@ -14,6 +14,6 @@ public class Main_4 {
             if (arr[i] == null) {
                 indexes.add(i);
             }
-                return indexes;
+        return indexes;
     }
 }
