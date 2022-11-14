@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Homework_1 {
     public static void main(String[] args) {
-        System.out.println("Вееденное число: " + floats());
+        System.out.println("Введенное число: " + floats());
     }
 
     public static float floats() {
