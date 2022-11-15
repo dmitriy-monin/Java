@@ -1,5 +1,9 @@
 package GeekBrains.Исключения.Seminar_2.Homework;
 
+// Разработайте программу, которая выбросит Exception, когда пользователь
+// вводит пустую строку. Пользователю должно показаться сообщение,
+// что пустые строки вводить нельзя.
+
 import java.util.Scanner;
 
 public class Homework_4 {
