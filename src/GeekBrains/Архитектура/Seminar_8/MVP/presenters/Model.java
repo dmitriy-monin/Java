@@ -17,4 +17,6 @@ public interface Model {
      * @return номер бронирования
      */
     int reservationTable(Date reservationDate, int tableNo, String name);
+    void editReservationTable(int oldReservation, Date reservationDate, int tableNo, String name);
+
 }

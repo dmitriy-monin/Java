@@ -16,6 +16,10 @@ public class Sample01 {
         bookingPresenter.updateView();
 
         bookingView.reservationTable(new Date(), 3, "Станислав");
+        bookingView.reservationTable(new Date(), 1, "Андрей");
+
+        bookingView.editReservationTable(1, new Date(),3, "Олег");
+        bookingView.reservationTable(new Date(), 2, "Иван");
 
     }
 

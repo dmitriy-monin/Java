@@ -38,18 +38,18 @@ public class BookingView implements View {
     }
 
     /**
-     * TODO: ДОМАШНЯЯ РАБОТА: Доработать метод changeReservationTable, протянуть возможность изменения
+     * ДОМАШНЯЯ РАБОТА: Доработать метод changeReservationTable, протянуть возможность изменения
      * резерва столика на уровне компонент BookingPresenter и BookingModel
      * @param reservationDate
      * @param tableNo
      * @param name
      */
-    public void  changeReservationTable(int oldReservation, Date reservationDate, int tableNo, String name){
-
+    public void editReservationTable(int oldReservation, Date reservationDate, int tableNo, String name){
+        observer.editReservationTable(oldReservation, reservationDate, tableNo, name);
     }
 
-    public void printReservationTableResult(int reservationNo){
-        System.out.printf("Столик успешно забронирован. Номер вашей брони #%d\n", reservationNo);
+    public void printReservationTableResult(int tableNo, int reservationNo){
+        System.out.printf("Столик #%s успешно забронирован. Номер вашей брони #%d\n", tableNo, reservationNo);
     }
 
 

@@ -11,18 +11,17 @@ public class BookingModel implements Model {
 
 
     private Collection<Table> tables;
+    private ArrayList reservations = new ArrayList<>();
 
     public Collection<Table> loadTables(){
-        if (tables == null){
+        if (tables == null) {
             tables = new ArrayList<>();
-
             tables.add(new Table());
             tables.add(new Table());
             tables.add(new Table());
             tables.add(new Table());
             tables.add(new Table());
         }
-
         return tables;
     }
 
@@ -39,10 +38,17 @@ public class BookingModel implements Model {
         if (table.isPresent()){
             Reservation reservation = new Reservation(reservationDate, name);
             table.get().getReservations().add(reservation);
+            reservations.add(reservation.getId());
             return reservation.getId();
         }
         throw new RuntimeException("Некорректный номер столика.");
     }
 
-
+    public void editReservationTable(int oldReservation, Date reservationDate, int tableNo, String name){
+        if (reservations.contains(oldReservation)){
+            reservations.remove(oldReservation-1);
+        } else {
+        throw new RuntimeException("Некорректный номер брони.");
+        }
+    }
 }
