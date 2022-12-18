@@ -49,7 +49,7 @@ public class BookingView implements View {
     }
 
     public void printReservationTableResult(int tableNo, int reservationNo){
-        System.out.printf("Столик #%s успешно забронирован. Номер вашей брони #%d\n", tableNo, reservationNo);
+        System.out.printf("Столик #%d успешно забронирован. Номер вашей брони #%d\n", tableNo, reservationNo);
     }
 
 
