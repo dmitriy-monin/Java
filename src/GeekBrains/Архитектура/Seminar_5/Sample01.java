@@ -392,8 +392,6 @@ class EditorDatabase implements Database{
         }
         entities.add(model);
     }
-
-
 }
 
 /**
@@ -440,7 +438,7 @@ class Model3D implements Entity{
 /**
  * Текстура
  */
-class Texture implements  Entity{
+class Texture implements Entity{
     private static int counter = 50000;
     private int id;
 
