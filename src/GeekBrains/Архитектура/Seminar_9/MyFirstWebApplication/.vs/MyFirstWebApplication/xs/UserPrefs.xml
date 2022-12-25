@@ -1,0 +1,33 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MyFirstWebApplication FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyFirstWebApplication/Program.cs">
+    <Files>
+      <File FileName="MyFirstWebApplication/Program.cs" Line="22" Column="4" />
+      <File FileName="MyFirstWebApplication/Models/WeatherForecast.cs" />
+      <File FileName="MyFirstWebApplication/Models/WeatherForecastModel.cs" />
+      <File FileName="MyFirstWebApplication/Controllers/WeatherForecastController.cs" />
+      <File FileName="MyFirstWebApplication/appsettings.json" />
+      <File FileName="MyFirstWebApplication/Properties/launchSettings.json" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyFirstWebApplication" expanded="True">
+            <Node name="MyFirstWebApplication" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
