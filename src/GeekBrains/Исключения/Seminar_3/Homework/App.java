@@ -34,8 +34,7 @@ package GeekBrains.Исключения.Seminar_3.Homework;
 корректно обработано, пользователь должен увидеть стектрейс ошибки.
  */
 public class App {
-    public static void main(String[] args) {
-        pushTheButton();
+    public static void main(String[] args) { pushTheButton();
     }
 
     private static void pushTheButton() {

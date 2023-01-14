@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ClinicService"
+    "\\ClinicService",
+    "\\ClinicService\\Models\\Requests",
+    "\\ClinicService\\Services\\Impl"
   ],
+  "SelectedNode": "\\ClinicService\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -12,56 +12,61 @@ package GeekBrains.Исключения.Seminar_3.Homework;
  */
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 
 public class ParseData {
-    private static String[] dataSet;
+    private String[] dataSet;
     private static String lastName;
     private static String firstName;
     private static String patronymic;
     private static LocalDate birthDate;
-    private static int phoneMumber;
+    private static long phoneNumber;
     private static char gender;
 
     public int parseData(String data) {
-        int errorCode = 0;
         this.dataSet = data.split(" ");
-        if (dataSet.length != 6) {
-            errorCode = 1;
+        if (dataSet.length < 6) {
+            return 1;
+        }
+        if (dataSet.length > 6) {
+            return 2;
         }
         else {
             try {
                 lastName = dataSet[0];
-            } catch (Exception e) {
+            } catch (RuntimeException e) {
                 System.out.println("Неверный формат фамилии"); 
             }
             try {
                 firstName = dataSet[1];
-            } catch (Exception e) {
+            } catch (RuntimeException e) {
                 System.out.println("Неверный формат имени");
             }
             try {
                 patronymic = dataSet[2];
-            } catch (Exception e) {
+            } catch (RuntimeException e) {
                 System.out.println("Неверный формат отчества");
             }
             try {
-                birthDate = LocalDate.parse(dataSet[3]);
-            } catch (Exception e) {
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd.MM.yyyy", Locale.ENGLISH);
+                birthDate = LocalDate.parse(dataSet[3], dtf);
+            } catch (RuntimeException e) {
                 System.out.println("Неверный формат дня рождения");
             }
             try {
-                phoneMumber = Integer.parseInt(dataSet[4]);
-            } catch (Exception e) {
+                phoneNumber = Long.parseLong(dataSet[4]);
+            } catch (RuntimeException e) {
                 System.out.println("Неверный формат номера телефона");
             }
             try {
                 gender = dataSet[5].charAt(0);
-            } catch (Exception e) {
+            } catch (RuntimeException e) {
                 System.out.println("Неверный формат символа пола");
             }
         }
-        return errorCode;
+        return 0;
     }
 
     public static String getLastName() {
@@ -80,15 +85,11 @@ public class ParseData {
         return birthDate;
     }
 
-    public static int getPhoneMumber() {
-        return phoneMumber;
+    public static long getPhoneNumber() {
+        return phoneNumber;
     }
 
     public static char getGender() {
         return gender;
-    }
-
-    public static String[] getDataSet() {
-        return dataSet;
     }
 }
