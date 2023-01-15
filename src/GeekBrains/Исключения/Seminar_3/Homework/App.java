@@ -32,6 +32,7 @@ package GeekBrains.Исключения.Seminar_3.Homework;
 При возникновении проблемы с чтением-записью в файл, исключение должно быть 
 корректно обработано, пользователь должен увидеть стектрейс ошибки.
  */
+
 public class App {
     public static void main(String[] args) { pushTheButton();
     }

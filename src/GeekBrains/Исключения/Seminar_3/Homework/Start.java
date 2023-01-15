@@ -1,5 +1,6 @@
 package GeekBrains.Исключения.Seminar_3.Homework;
 
+
 public class Start {
     public String start() {
         InputData user = new InputData();

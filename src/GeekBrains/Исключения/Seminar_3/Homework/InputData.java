@@ -9,6 +9,7 @@ import java.util.Scanner;
 номер_телефона - целое беззнаковое число без форматирования
 пол - символ латиницей f или m.
  */
+
 public class InputData {
     private String userData;
 

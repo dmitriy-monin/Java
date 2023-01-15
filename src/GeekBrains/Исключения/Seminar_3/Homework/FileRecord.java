@@ -12,6 +12,7 @@ package GeekBrains.Исключения.Seminar_3.Homework;
 При возникновении проблемы с чтением-записью в файл, исключение должно быть 
 корректно обработано, пользователь должен увидеть стектрейс ошибки.
  */
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
