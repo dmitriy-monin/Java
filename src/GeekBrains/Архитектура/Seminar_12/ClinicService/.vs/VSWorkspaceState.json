@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "\\ClinicServiceTests",
+    "\\ClinicService\\Controllers",
+    "\\ClinicService\\Models",
+    "\\ClinicService\\obj",
+    "\\ClinicService\\Properties",
+    "\\ClinicService\\Services",
+    "\\ClinicService\\Services\\Impl"
+  ],
+  "PreviewInSolutionExplorer": false
+}
