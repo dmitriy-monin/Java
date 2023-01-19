@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ClinicDesctop",
+    "\\ClinicDesctop\\obj",
+    "\\ClinicDesctop\\OpenAPIs",
+    "\\ClinicService",
+    "\\ClinicService\\Models",
+    "\\ClinicService\\Properties",
+    "\\ClinicService\\Services",
+    "\\ClinicService\\Services\\Impl"
+  ],
+  "SelectedNode": "\\ClinicService\\Services\\Impl\\PetRepository.cs",
+  "PreviewInSolutionExplorer": false
+}

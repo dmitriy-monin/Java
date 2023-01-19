@@ -1,11 +1,7 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MyFirstWebApplication FirstBuild="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.MyFirstWebApplication FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MyFirstWebApplication/Program.cs">
     <Files>
       <File FileName="MyFirstWebApplication/Program.cs" Line="22" Column="4" />
@@ -19,15 +15,20 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyFirstWebApplication" expanded="True">
-            <Node name="MyFirstWebApplication" expanded="True" selected="True">
+            <Node name="MyFirstWebApplication" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
