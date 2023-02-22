@@ -1,0 +1,17 @@
+  196  cat > pets
+  197  cat > packAnimals
+  198  cat pets packAnimals > allAnimals
+  199  cat allAnimals
+  200  mv allAnimals humanFriends
+  201  mkdir animalsDirectory
+  202  mv humanFriends animalsDirectory
+  203  sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+  204  sudo apt-get update
+  205  sudo apt-get install mysql-server
+  206  sudo apt-get install mysql-workbench-community
+  207  wget https://download.virtualbox.org/virtualbox/6.1.38/virtualbox-6.1_6.1.38-153438~Ubuntu~jammy_amd64.deb
+  208  sudo dpkg -i virtualbox-6.1_6.1.38-153438~Ubuntu~jammy_amd64.deb
+  209  sudo apt -f install
+  210  sudo dpkg -r virtualbox*
+  211  history
+  212  history > myhistory.txt
